@@ -17,9 +17,11 @@ report = (f"{player_1} scored in the {goal_0}nd minute\n{player_2} scored in the
 #Part 2 of Assignment
 
 player = "Jan Wouters"
-first_name = player[0:3]
+fnlength = player.index(" ")
 
-last_name_len = len(player[4:])
+first_name = player[0:fnlength]
+
+last_name_len = len(player[fnlength + 1:])
 
 name_short = player[0:1] + ". " + player[4:]
 
